@@ -1,6 +1,9 @@
 # CubeMX KiCad Netlabels
 
-Create KiCad schematic net labels from an STM32CubeMX CSV pinout file.
+Create KiCad schematic net labels from an STM32CubeMX pinout CSV. The app matches package pin numbers to pins on your KiCad symbol, then adds wire stubs and labels.
+
+The original schematic can be not overwritten. The generated schematic is saved as a new file.
+I recommend insepcting the generated file first then you can overwrite on the original one.
 
 ## Quick start
 
