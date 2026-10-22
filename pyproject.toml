@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cubemx-kicad-netlabels"
+version = "1.0.0"
+description = "Create KiCad net labels from an STM32CubeMX CSV pinout file"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "MBrahim" }]
+
+[project.scripts]
+cubemx-kicad-netlabels = "cubemx_kicad_netlabels:main"
+cubemx-kicad-netlabels-gui = "cubemx_kicad_netlabels.gui:launch"
+
+[project.optional-dependencies]
+gui = ["PySide6>=6.5"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

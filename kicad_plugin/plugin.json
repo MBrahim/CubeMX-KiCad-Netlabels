@@ -1,0 +1,22 @@
+{
+  "$schema": "https://go.kicad.org/api/schemas/v1",
+  "identifier": "com.github.mbrahim.cubemx-kicad-netlabels",
+  "name": "CubeMX KiCad Netlabels",
+  "description": "Create KiCad schematic net labels from a CubeMX pinout CSV.",
+  "runtime": {
+    "type": "python",
+    "min_version": "3.10"
+  },
+  "actions": [
+    {
+      "identifier": "label-schematic-from-cubemx-csv",
+      "name": "Label schematic from CubeMX CSV",
+      "description": "Open the CubeMX net-label GUI to choose a CSV and schematic.",
+      "show-button": true,
+      "scopes": ["pcb"],
+      "entrypoint": "main.py",
+      "icons-light": ["Cubemx2sch_Light.png"],
+      "icons-dark": ["Cubemx2sch_Dark.png"]
+    }
+  ]
+}

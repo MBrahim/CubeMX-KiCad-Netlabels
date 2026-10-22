@@ -1,0 +1,8 @@
+- Python, standard library first; the core has no third-party runtime dependencies.
+- Type hints, small functions, docstrings that cite the KiCad doc URL for any format decision.
+- Never rewrite or reformat existing schematic text; only insert. Never change `version` or `generator`. Never write over the input file unless `--in-place` is given.
+- Anything marked VERIFY must be checked and recorded in `docs/DESIGN.md` before relying on it.
+- If a fact cannot be verified, do not guess: choose the safest behaviour, document it, and list it as an open question.
+- Do not copy code from third-party projects without checking the licence; the target licence must be GPL-compatible for the official KiCad repository.
+- Keep commits small; run `pytest` before each commit; update README/CHANGELOG with behaviour changes.
+- Do not claim support for a KiCad version unless a fixture from that version is tested.

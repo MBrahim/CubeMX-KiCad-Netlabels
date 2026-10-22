@@ -1,0 +1,15 @@
+(kicad_sch
+  (version 20240609)
+  (generator "eeschema")
+  (uuid "test-uuid")
+  (paper "A4")
+  (symbol "MCU:STM32G0"
+    (property "Reference" "U1")
+    (property "Value" "STM32G0")
+    (pin "1" (uuid "p1") (at 0 0 0) (length 2.54) (name "PA0") (number "1"))
+    (pin "2" (uuid "p2") (at 0 -2.54 0) (length 2.54) (name "PA1") (number "2"))
+    (instances
+      (project "Test" (path "/root/board.kicad_sch" (reference "U1") (unit 1)))
+    )
+  )
+)
