@@ -1,5 +1,8 @@
 # CubeMX KiCad Netlabels
 
+> [!WARNING]
+> **AI-written code.** This tool was written almost entirely by Claude | Co-Pilot, working from my design direction, feedback and bug reports. I've used and tested it on Windows with KiCad 10, but other setups are less tested, so expect rough edges. Treat it like any third-party code: keep backups of your projects and report problems in Issues.
+
 Create KiCad schematic net labels from an STM32CubeMX pinout CSV. The app matches package pin numbers to pins on your KiCad symbol, then adds wire stubs and labels.
 
 The original schematic can be not overwritten. The generated schematic is saved as a new file.
